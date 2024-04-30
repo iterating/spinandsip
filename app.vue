@@ -20,7 +20,7 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
       <div
         class="mt-7 text-base font-bold leading-6 text-center text-neutral-800 max-md:max-w-full"
       >
-      <img src="/content/jinnandremedy.jpg">
+      <img src="/content/jinnandremedy.jpeg">
 {{ data.hero.description }}
 
       </div>
