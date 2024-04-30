@@ -8,11 +8,12 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
     <ContentRenderer :value="data">
       <h1>{{ data.title }}</h1>
 
- <div
-    class="flex flex-col items-center px-16 pt-10 pb-6 w-full bg-neutral-50 max-md:px-5 max-md:max-w-full"
+ <div 
+    class="flex flex-col items-center px-16 pt-10 pb-6 w-full bg-neutral-50 max-md:px-5 max-md:max-w-full" v-if="data">
+
   >
     <div class="flex flex-col max-w-full w-[918px]">
-      <div class="self-center text-3xl leading-10 text-black max-md:max-w-full">
+      <div class="self-center text-3xl leading-10 text-black max-md:max-w-full" v-if="data">
 {{ data.hero.title }}      </div>
       <div
         class="mt-7 text-base font-bold leading-6 text-center text-neutral-800 max-md:max-w-full"
@@ -28,8 +29,9 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
       <div>
         <hero />
       </div>
+
     <div v-if="data">
-    <div class="landing-">
+    <div class="landing-" v-if="data">
       <h1>{{ data.hero.title }}</h1>
       <p>{{ data.hero.description }}</p>
       <ul>
@@ -50,7 +52,7 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
 
 
 
-    <div v-for="(section, index) in data.sections" :key="index" class="landing-section">
+    <div v-for="(section, index) in data.sections" :key="index" class="landing-section" v-if="data">
       <h2>{{ section.title }}</h2>
       <p>{{ section.description }}</p>
       <div v-for="(feature, index) in section.features" :key="index">
@@ -58,7 +60,7 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
       </div>
     </div>
 
-    <div class="landing-section">
+    <div v-if="data">
       <h2>{{ data.features.title }}</h2>
       <p>{{ data.features.description }}</p>
       <div class="u-data-grid">
@@ -96,8 +98,8 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
    
           
 
-    <div class="landing-section">
-      <h2>{{ data.testimonials.title }}</h2>
+  <div v-if="data">
+    <h2>{{ data.testimonials.title }}</h2>
       <p>{{ data.testimonials.description }}</p>
       <div class="u-data-columns">
         <div v-for="(testimonial, index) in data.testimonials.items" :key="index" class="break-inside-avoid">
