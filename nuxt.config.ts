@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-pages: false
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -20,11 +19,5 @@ export default defineNuxtConfig({
     }
   },
 
-  routeRules: {
-    '/api/search.json': { prerender: true },
-    '/docs': { redirect: '/docs/getting-started', prerender: false }
-  },
-  devtools: {
-    enabled: true
-  }
+
 })
