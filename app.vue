@@ -6,7 +6,9 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
 <template>
   <main>
     <ContentRenderer :value="data">
+      <div v-if="data">
       <h1>{{ data.title }}</h1>
+      </div>
 
  <div 
     class="flex flex-col items-center px-16 pt-10 pb-6 w-full bg-neutral-50 max-md:px-5 max-md:max-w-full" v-if="data">
@@ -30,7 +32,7 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
         <hero />
       </div>
 
-    <div v-if="data">
+
     <div class="landing-" v-if="data">
       <h1>{{ data.hero.title }}</h1>
       <p>{{ data.hero.description }}</p>
@@ -40,7 +42,7 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
         </li>
       </ul>
       <template v-if="data.hero.headline">
-        <div class="headline-badge relative rounded-full font-semibold">
+        <div class="headline-badge relative rounded-full font-semibold" v-if="data">
           <a :href="data.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
             <span class="absolute inset-0" aria-hidden="true"></span>
           </a>
@@ -92,7 +94,6 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
         </div>
       </div>
     </div>
-  </div>
 
 
    
@@ -101,12 +102,12 @@ const { data } = await useAsyncData('indexx', () => queryContent('/indexx').find
   <div v-if="data">
     <h2>{{ data.testimonials.title }}</h2>
       <p>{{ data.testimonials.description }}</p>
-      <div class="u-data-columns">
+      <div class="u-data-columns" v-if="data">
         <div v-for="(testimonial, index) in data.testimonials.items" :key="index" class="break-inside-avoid">
-          <div class="bg-gray-100/50 dark:bg-gray-800/50">
+          <div class="bg-gray-100/50 dark:bg-gray-800/50" v-if="data">
             <h3>{{ testimonial.title }}</h3>
             <p>{{ testimonial.content }}</p>
-            <div class="testimonial-author">
+            <div class="testimonial-author" v-if="data">
               <img :src="testimonial.author.avatar" :alt="testimonial.author.name" />
               <span>{{ testimonial.author.name }}</span>
             </div>
