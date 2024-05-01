@@ -1,37 +1,25 @@
 <script setup>
 const { data: page } = await useAsyncData('index', () => queryContent('/indexx').findOne())
-</script>
- 
+</script> 
 
 <template>
-  <main>
-    <ContentRenderer :value="data">
-      <div v-if="page">
-      <h1>{{ page.title }}</h1>
-      </div>
+<main>
+<ContentRenderer :value="data">
+  <div v-if="page">
+    <h1>{{ page.title }}</h1>
+  </div>
 
  <div 
     class="flex flex-col items-center px-16 pt-10 pb-6 w-full bg-neutral-50 max-md:px-5 max-md:max-w-full" v-if="page">
-
-  >
     <div class="flex flex-col max-w-full w-[918px]">
       <div class="self-center text-3xl leading-10 text-black max-md:max-w-full" v-if="page">
-{{ page.hero.title }}      </div>
-      <div
-        class="mt-7 text-base font-bold leading-6 text-center text-neutral-800 max-md:max-w-full"
-      >
+      {{ page.hero.title }} </div>
+    <div class="mt-7 text-base font-bold leading-6 text-center text-neutral-800 max-md:max-w-full">
       <img src="/public/landing.jpeg">
-{{ page.hero.description }}
-
-      </div>
+      {{ page.hero.description }}
+    </div>
     </div>
   </div>
-
-
-      <div>
-        <hero />
-      </div>
-
 
     <div class="landing-" v-if="page">
       <h1>{{ page.hero.title }}</h1>
@@ -118,7 +106,7 @@ const { data: page } = await useAsyncData('index', () => queryContent('/indexx')
 
   </div>
 
-  </ContentRenderer>
+</ContentRenderer>
 </main>
 </template>
 
