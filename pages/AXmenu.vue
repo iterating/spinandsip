@@ -1,13 +1,17 @@
 <template>
+  <main>
+    <ContentDoc />
+  </main>
   <div>
-    <div v-html="$content('axmenu').text"></div>
+    <NuxtPage />
+    <NuxtLink to="/">Home page</NuxtLink>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData() {
-    const page = await import(`~/content/axmenu.md`)
+    const page = await import(`~/content/2.axmenu.md`)
       .then((m) => m.default)
       .catch(() => null);
     return { page };
