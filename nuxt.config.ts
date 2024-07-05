@@ -2,7 +2,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', "@nuxt/image"],
+
   routeRules: {
     '/': { prerender: true }
-  }
+  },
+
+  css: ['~/assets/css/main.css'],
+
+    
+  compatibilityDate: '2024-07-05'
+
+
 })
+
