@@ -1,8 +1,3 @@
----
-title: 'AX Menu'
-description: 'AX'
----
-
 # AX Day 1: Celebrating BNHA
  Celebrating a graceful and beautiful end to Boku No Hero Academia and to our Independance Day!  `15 ea` `+5 for double shot`
  
@@ -80,3 +75,5 @@ Keeps you going through the night
 > ### Hazy IPA
 
 > ### Belgian White
+
+<img src= "qr0.jpg" width="500" height="350">
