@@ -29,7 +29,7 @@ const { data: page } = await useAsyncData('index', () => queryContent('/indexx')
         <a :href="link.url">{{ link.text }}</a>
       </li>
     </ul>
-    <img src="/public/bar.spinandsip.logo.jpg">
+    <img src="/public/bar.spinandsiplogo.jpg">
     <template v-if="page.hero.headline">
       <div class="headline-badge relative rounded-full font-semibold" v-if="page">
         <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
