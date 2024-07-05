@@ -4,9 +4,9 @@ const { data: page } = await useAsyncData('index', () => queryContent('/AXmenu')
 
 
 <template>
-  <div>
-    
-  </div>
+  <AppLayout>
+    <NuxtPage />
+  </AppLayout>
 </template>
 
 <script lang="ts" setup>
