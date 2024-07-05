@@ -1,0 +1,22 @@
+# Jinn's Whiskey Bar 
+Take a drink from my personal whiskey collection. `20 ea`
+
+## Suntory Hibiki Harmony
+Japanese whiskeys are so hot that demand has been outpacing supply. This famous Hibiki has fruity notes, a burn, and a pleasant sweet aftertaste.  
+
+## Nikka Coffey Grain
+Sweet notes and a full bodied finish, this was my favorite when I went whiskey tasting at Bar Jackalope. Coffey grains doesnt mean its aged in coffee barrels, but the coffee notes are mysteriously there. 
+
+## Ardbeg 10 years
+Do you like smokiness? This takes the smokiness of mezcals and puts it in an Irish whiskey. Brings you straight to a campfire. 
+
+## Isle of Skye 12 Years
+Caught my eye with a rare 98 official rating.  This one has just the right hints peat, smoke, and burn, and is exceedingly smooth, I get the hype.  
+
+## Oban 14 Years
+Very complex with a full bodied finish, this one hits you with flavor. This is complex and balanced and I love it. 
+
+## Glenfidditch 14 Years
+Very peaty, as Glenfidditch does. This one has a complex, herbal, and smoky taste with hints of oak. 
+
+<img src= "qr0.jpg" width="500" height="350">
