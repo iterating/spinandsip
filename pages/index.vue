@@ -29,6 +29,7 @@ const { data: page } = await useAsyncData('index', () => queryContent('/indexx')
         <a :href="link.url">{{ link.text }}</a>
       </li>
     </ul>
+    <img src="/public/bar.spinandsip.logo.jpg">
     <template v-if="page.hero.headline">
       <div class="headline-badge relative rounded-full font-semibold" v-if="page">
         <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
@@ -36,10 +37,10 @@ const { data: page } = await useAsyncData('index', () => queryContent('/indexx')
         </a>
         {{ page.hero.headline.label }}
         <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4"></span>
+
       </div>
     </template>
   </div>
-
 
 
   <div v-for="(section, index) in page.sections" :key="index" class="landing-section" v-if="page">
