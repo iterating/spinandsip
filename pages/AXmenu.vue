@@ -4,15 +4,20 @@ const { data: page } = await useAsyncData('index', () => queryContent('/AXmenu')
 
 
 <template>
-  <AppLayout>
-    <NuxtPage />
-  </AppLayout>
+  <div>
+    <div v-html="markdownContent"></div>
+  </div>
 </template>
 
-<script lang="ts" setup>
-
+<script>
+export default {
+  async asyncData({ $content }) {
+    const markdownContent = await $content('AXmenu').fetch()
+    return { markdownContent }
+  },
+}
 </script>
 
 <style>
-
+/* Add your component-specific styles here if needed */
 </style>
