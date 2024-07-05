@@ -27,6 +27,8 @@ const { data: page } = await useAsyncData('index', () => queryContent('/indexx')
     <ul>
       <li v-for="(link, index) in page.hero.links" :key="index">
         <a :href="link.url">{{ link.text }}</a>
+        <img src="/public/bar.spinandsiplogo.jpg">
+p
       </li>
     </ul>
     <template v-if="page.hero.headline">
