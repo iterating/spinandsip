@@ -1,27 +1,25 @@
-# AX Day 1: Celebrating BNHA
- Celebrating a graceful and beautiful end to Boku No Hero Academia and to our Independance Day!  `15 ea` `+5 for double shot`
+---
+layout: menu
+---
+# Specialty Cocktails `20 ea` 
+Jinn's double shot cocktails made with premium liquor
+
+##  Celebrating BNHA
+ Celebrating a graceful  end to Boku No Hero Academia and to our Independance Day!
  
 > ### United States of Smashed
->The aesthetic symbol to celebrate  the red, white, and blue `vodka base` 
-> <img src= "ax.drinks.unitedstatesofsmashed.jpg" width="200" height="300">
+>The aesthetic symbol to celebrate  the red, white, and blue `vodka base`   
+> <img src= "ax.drinks.unitedstatesofsmashed.jpg" width="150" height="200">
 
  >### Deku Highball
->Unconventional underdog drink for connoisseurs that's suprisingly sippable  `whiskey base` 
-> <img src= "ax.drinks.dekuhighball.jpg" width="200" height="300">
-
+> Unconventional underdog drink for connoisseurs that's suprisingly sippable  `whiskey base`   
+> <img src= "ax.drinks.dekuhighball.jpg" width="150" height="200">
 
 >### Murder God  Margarita
->Explosive strawberry margarita with Celsius caffiene to keep you getting up `tequila base`  
-> <img src= "ax.drinks.murdergodmargarita.jpg" width="200" height="300">
+>Explosive strawberry margarita with Celsius caffiene to keep you getting up `tequila base`    
+> <img src= "ax.drinks.murdergodmargarita.jpg" width="150" height="200">
 
-
-Please vote for our independance and freedom from autocracy this November. Look up "Project 2025" to see what we are fighting against this voting season. 
-
- ---
-
-
-# Specialty Cocktails `20 ea` 
-Jinn's double shot ccktails made with premium liquor
+Please vote for our independance and freedom from autocracy this November. Look up "Project 2025" to see what we are fighting against this voting season.
 
 > ### Cosmopolitan
 > Grey Goose, triple sec, cranberry `Vodka base`
@@ -33,15 +31,13 @@ Jinn's double shot ccktails made with premium liquor
 > Don Julio Blanco, triple sec, lime, agave `Tequila base`
 
 > ### Old Fashioned 
-> Jack, angostura, simple syrup
+> Jack Daniels, Angostura, simple syrup
 
-
-
-<img src= "qr0.jpg" width="500" height="350">
+<img src= "qr0.jpg" width="500" height="250">
 
 ---
 
-# Poisons `15 ea` 
+# Poisons `15 ea`  Double shots
  Upgrade to Grey Goose/Don Julio `+5` 
 
 > ### Cranberry Vodka 
@@ -59,7 +55,6 @@ Jinn's double shot ccktails made with premium liquor
 > ### Whiskey Coke 
 >  `whiskey base`
 
-
 --- 
 # Potions
 Keeps you going through the night
@@ -70,10 +65,4 @@ Keeps you going through the night
 
 > ### Bottled Water `5` 
 
----
-# Beers `10`
-> ### Hazy IPA
-
-> ### Belgian White
-
-<img src= "qr0.jpg" width="500" height="350">
+<img src= "qr0.jpg" width="500" height="220">

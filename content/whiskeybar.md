@@ -1,3 +1,8 @@
+---
+layout: menu
+---
+
+
 # Jinn's Whiskey Bar 
 Take a drink from my personal whiskey collection. `20 ea`
 
@@ -19,4 +24,3 @@ Very complex with a full bodied finish, this one hits you with flavor. This is c
 ## Glenfidditch 14 Years
 Very peaty, as Glenfidditch does. This one has a complex, herbal, and smoky taste with hints of oak. 
 
-<img src= "qr0.jpg" width="500" height="350">
