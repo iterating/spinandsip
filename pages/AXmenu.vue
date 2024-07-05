@@ -1,9 +1,7 @@
+
 <template>
-  <main>
-    <ContentDoc />
-  </main>
   <div>
-    <NuxtPage />
+    <ContentDoc />
     <NuxtLink to="/">Home page</NuxtLink>
   </div>
 </template>
@@ -14,6 +12,8 @@ export default {
     const page = await import(`~/content/2.axmenu.md`)
       .then((m) => m.default)
       .catch(() => null);
+    console.log(page)
+
     return { page };
   },
 };

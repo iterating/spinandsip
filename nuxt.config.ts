@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@vueuse/nuxt',
-    '@builder.io/sdk-vue/nuxt'
+    '@builder.io/sdk-vue/nuxt',
+    '@nuxtjs/tailwindcss',
   ],
   content: {
     documentDriven: true
