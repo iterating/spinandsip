@@ -22,7 +22,7 @@ export default {
   }
 
   .hero {
-    background: url('/images/hero-image.jpg') no-repeat center center;
+    background: url('/images/hero-image.png') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 100px 0;
