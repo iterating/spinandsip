@@ -1,6 +1,6 @@
 <script setup>
   //extract the `data` into variable `page`
-const { data: page } = await useAsyncData('index', () => queryContent('/indexx').findOne())
+const { data: page } = await useAsyncData('page-data', () => queryContent('/indexx').findOne())
 </script> 
 
 <template>
