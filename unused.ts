@@ -126,3 +126,25 @@ export default {
   margin-bottom: 20px;
 }
 </style>
+
+  - title: The speed of our service
+    description: Cillum sint enim excepteur ut deserunt qui nisi in deserunt in. Deserunt aliquip quis aliquip eu quis ex velit velit nostrud sit.
+    align: right
+    features:
+      - name: Fast
+        description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod.
+        icon: i-heroicons-rocket-launch
+      - name: Affordable
+        description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+        icon: i-heroicons-currency-dollar
+      - name: Scalable
+        description: Lorem deserunt et eiusmod. Ea in consectetur minim officia.
+        icon: i-heroicons-chart-bar
+    links:
+      - label: Learn more
+        to: /pro/guide/content
+        color: gray
+        icon: i-heroicons-arrow-right-20-solid
+        trailing: true
+        size: md
+        class: ml-8
