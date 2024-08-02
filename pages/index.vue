@@ -30,8 +30,8 @@ const { data: page } = await useAsyncData('page-data', () => queryContent('/inde
     </template>
   </div> 
 
-    <img src="/public/landing.jpeg">
-    <img src="/public/bar.spinandsiplogo.jpg">
+    <img src="/public/landing.png">
+    <img src="/public/bar.spinandsiplogo.png">
 
   <div v-for="(section, index) in page.sections" :key="index" class="landing-section" v-if="page">
     <h2>{{ section.title }}</h2>
