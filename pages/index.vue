@@ -5,13 +5,11 @@ const { data: page } = await useAsyncData('page-data', () => queryContent('/inde
 
 <template>
 <main>
-<ContentRenderer :value="data">
   <div v-if="page">
     <h1>{{ page.title }}</h1>
   </div>
 
 <!-- Hero -->
-  <div class="landing text-center" v-if="page">
     <h1>{{ page.hero.title }}</h1>
     <p>{{ page.hero.description }}</p>
     <ul>
@@ -21,14 +19,13 @@ const { data: page } = await useAsyncData('page-data', () => queryContent('/inde
     </ul>
     <template v-if="page.hero.headline">
       <div class="headline-badge relative rounded-full font-semibold" v-if="page">
-        <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
+        <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none">
           <span class="absolute inset-0" aria-hidden="true"></span>
         </a>
         <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4"></span>
 
       </div>
     </template>
-  </div> 
 
     <img src="/public/landing.png">
     <img src="/public/bar.spinandsiplogo.png">
@@ -36,8 +33,7 @@ const { data: page } = await useAsyncData('page-data', () => queryContent('/inde
   <div v-for="(section, index) in page.sections" :key="index" class="landing-section" v-if="page">
     <h2>{{ section.title }}</h2>
     <p>{{ section.description }}</p>
-    <div v-for="(feature, index) in section.features" :key="index">
-
+    <div v-for="(feature, index) in section.features" :key="index"
     </div>
   </div>
 
@@ -68,7 +64,6 @@ const { data: page } = await useAsyncData('page-data', () => queryContent('/inde
           </div>
         </div>
 
-</ContentRenderer>
 </main>
 </template>
 
