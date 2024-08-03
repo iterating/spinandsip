@@ -81,68 +81,68 @@ useSeoMeta({
 </template>
 
 <style scoped>
-.landing-hero {
-  position: relative;
-}
+  .landing-hero {
+    position: relative;
+  }
 
-.landing-hero ul {
-  list-style: none;
-  padding: 0;
-}
+  .landing-hero ul {
+    list-style: none;
+    padding: 0;
+  }
 
-.landing-hero ul li {
-  margin-bottom: 10px;
-}
+  .landing-hero ul li {
+    margin-bottom: 10px;
+  }
 
-.landing-hero .headline-badge {
-  position: relative;
-}
+  .landing-hero .headline-badge {
+    position: relative;
+  }
 
-.landing-hero .headline-badge .badge-link {
-  text-decoration: none;
-  color: inherit;
-}
+  .landing-hero .headline-badge .badge-link {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.landing-hero .headline-badge .headline-icon {
-  margin-left: 5px;
-}
+  .landing-hero .headline-badge .headline-icon {
+    margin-left: 5px;
+  }
 
-.landing-section h2 {
-  margin-bottom: 10px;
-}
+  .landing-section h2 {
+    margin-bottom: 10px;
+  }
 
-.landing-section p {
-  margin-bottom: 20px;
-}
+  .landing-section p {
+    margin-bottom: 20px;
+  }
 
-.u-data-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
-}
+  .u-data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
 
-.u-landing-card {
-  background-color: rgba(240, 240, 240, 0.5);
-  padding: 20px;
-  margin-bottom: 20px;
-}
+  .u-landing-card {
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 
-.testimonial-author {
-  display: flex;
-  align-items: center;
-}
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
 
-.testimonial-author img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+  .testimonial-author img {
+    width: comm30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
 
-.u-data-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;  padding: 20px;
-  margin-bottom: 20px;
-}
+  .u-data-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;  padding: 20px;
+    margin-bottom: 20px;
+  }
 </style>
