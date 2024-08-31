@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="container">
       <h1>Professional Mobile DJ and Bartending Services</h1>
-      <p>Serving Quality Drinks And SOundtrack for Every Occasion</p>
+      <p>Serving Quality Drinks And Soundtrack for Every Occasion</p>
     </div>
   </section>
 </template>
