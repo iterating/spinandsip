@@ -1,10 +1,12 @@
 title: Spin and Sip - LA Bartender and DJ
 description: Spin and Sip is Bartender Jinn and DJ Remedy providing premium event bartender and DJ services in the greater Los Angeles Area
 navigation: false
+
 hero:
   title: Spin and Sip Event Services
   description: Bartending and Dj Services by Jinn and DJ Remedy
-  headline:
+  image: landing.png
+  headline: 
     label: Book Now
     to: /book
     icon: i-heroicons-arrow-top-right-on-square-20-solid
@@ -15,21 +17,23 @@ hero:
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
+
 sections:
-  - title: The power of our service
-    description: Aliqua labore laboris fugiat. Reprehenderit exercitation eu commodo. Officia nostrud sit et aliqua ea ex sunt minim incididunt sunt.
+  - title: What We Offer
+    description: Whether you're hosting a wedding, corporate event, or a private party, Spin and Sip brings the energy to your event! We blend top-tier bar services with incredible DJ entertainment, ensuring your guests have an unforgettable time.
+
     id: features
-    align: left
+    align: center
     features:
-      - name: Easy to use
-        description: Id laborum laboris duis nostrud excepteur ut velit.
-        icon: i-heroicons-cog
-      - name: Reliable
-        description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-        icon: i-heroicons-check
-      - name: Secure
-        description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing.
-        icon: i-heroicons-lock-closed
+      - name: Craft Cocktails & Full Bar Service
+        description: Professional bartender Jinn crafts signature cocktails and serve your favorite drinks. Whether it's classic cocktails or personalized beverages, we cater to your tastes and theme.
+        icon: ax.drinks.unitedstatesofsmashed.png
+      - name: Professional DJ Services
+        description: DJ Remedy gets the crowd moving, knows how to read the room and keep the energy high. From chill lounge vibes to a full dance floor, we’ve got you covered.
+        icon: 
+      - name: Seamless Experience
+        description: We take care of everything – from setup to cleanup – so you can relax and enjoy the event with your guests. Our team works closely with you to tailor our services to your event’s unique needs.
+        icon: bar.spinandsiplogo.png
     links:
       - label: Explore components
         to: /pro/components
@@ -40,77 +44,69 @@ sections:
         class: ml-8
 
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Why Choose Spin and Sip?
+  description: We understand that every event is unique. That’s why we work closely with you to create a custom package that fits your specific needs, preferences, and budget. Whether you're dreaming of a classy cocktail soirée or a high-energy dance party, we’ll make it happen.
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
+    - title: Personalized Experience
+      description: We work with you to customize a package that fits your vision and budget.
+      icon: 
+    - title: High-Quality Equipment
+      description: State-of-the-art sound systems and bar setups that create the perfect ambiance for your event.
+      icon: bar.spinandsiplogo.png
+    - title: Unmatched Service
+      description: Our team is dedicated to making your event a success. Expect professionalism, fun, and a memorable experience for you and your guests.
+      icon: 
+
 testimonials:
   headline: Testimonials
   title: What our customers are saying.
   description: 
   items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+    - quote: I hired Spin and Sip for our wedding reception, and they truly delivered. The DJ was fantastic, reading the crowd perfectly and keeping everyone on the dance floor all night. The bartender was skilled and personable, creating delicious cocktails and managing the bar seamlessly. Our guests were impressed, and the event was a huge success. Highly recommended for any event!
       author:
-        name: Rose Roberson
-        description: CEO at Company
+        name: Jaime Everos
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=1
           loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+    - quote: We used Spin and Sip for our anniversary party, and they were amazing. The DJ played a perfect mix of music that fit the vibe of our event, and the bartender was efficient and friendly. Our guests loved the custom cocktails and the overall energy of the party. Spin and Sip made our celebration unforgettable!
       author:
         name: Chace Rodgers
-        description: CEO at Company
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=7
           loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+    - quote: From start to finish, Spin and Sip delivered an outstanding experience for our holiday party. The DJ was fantastic, mixing tracks that appealed to everyone, and the bartender was efficient, crafting amazing drinks that everyone enjoyed. The combination of great music and excellent service made for an unforgettable evening. I would definitely hire them again for future events!
       author:
         name: Cornelius Sheppard
-        description: CEO at Company
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=3
           loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
+    - quote: Spin and Sip’s team did an excellent job at our corporate event. The DJ kept the atmosphere upbeat and engaging, while the bartender provided top-notch service with a smile. The only reason for the 4-star rating is a minor delay in setting up, but once they were ready, everything went smoothly. Great experience overall!
       author:
         name: Destinee Woods
-        description: CEO at Company
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=5
           loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
+    - quote: Spin and Sip has a great concept with its bar and DJ combo
       author:
         name: Kaleb Mccormick
-        description: CEO at Company
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=8
           loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
+    - quote: The mixology skills of the bartenders are impressive, and their signature cocktails are a must-try. I loved every moment and will be recommending this to all my friends!
       author:
         name: Jazmin Mccall
-        description: CEO at Company
+        description: 
         avatar:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Let’s Make Your Event Unforgettable
+  description: Get in touch today to book Spin and Sip for your next event. We can’t wait to help you celebrate in style!
   links:
     - label: Book now
       size: xl

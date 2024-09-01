@@ -47,65 +47,78 @@ function toggleDrawer() {
 <!-- Content  -->
 <main id="content">    
 
-    <!-- Hero -->
-     <div class="landing-hero">
-      <h1 class="landing-hero">{{ page.hero.title }}</h1>
+    <!-- Hero Section -->
+    <div class="landing-hero">
+      <h1>{{ page.hero.title }}</h1>
       <p>{{ page.hero.description }}</p>
       <ul>
         <li v-for="(link, index) in page.hero.links" :key="index">
           <a :href="link.url">{{ link.text }}</a>
         </li>
       </ul>
-      
       <template v-if="page.hero.headline">
-        <div class="headline-badge relative rounded-full font-semibold" v-if="page">
+        <div class="headline-badge relative rounded-full font-semibold">
           <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none">
             <span class="absolute inset-0" aria-hidden="true"></span>
+            {{ page.hero.headline.text }}
           </a>
-          <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4"></span>
-
+          <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4">
+            <!-- Optional Icon -->
+          </span>
         </div>
       </template>
-      <img src="/public/landing.png">
-      <img src="/public/bar.spinandsiplogo.png">
+      <img :src="page.hero.image" alt="Landing Image" class="hero-image">
     </div>
 
-    <!-- Features -->
-      <div v-for="(section, index) in page.sections" :key="index" class="landing-section" v-if="page">
-        <h2>{{ section.title }}</h2>
-        <p>{{ section.description }}</p>
-        <div v-for="(feature, index) in section.features" :key="index">
+   <!-- Features Sections -->
+   <div v-for="(section, index) in page.sections" :key="index" class="landing-section">
+    <h2>{{ section.title }}</h2>
+    <p>{{ section.description }}</p>
+    <div v-for="(feature, featureIndex) in section.features" :key="featureIndex" class="u-landing-card" >
+      <h3>{{ feature.name }}</h3>
+      <p>{{ feature.description }}</p>
+      <img :src="feature.icon" class="landing-feature-icon">
+
+    </div>
+  </div>
+
+    <!-- General Features -->
+    <div class="landing-general-features">
+      <h2>{{ page.features.title }}</h2>
+      <p>{{ page.features.description }}</p>
+      <div class="u-data-grid">
+        <div v-for="(feature, featureIndex) in page.features.items" :key="featureIndex" class="u-landing-card">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+          <img :src="feature.icon" class="landing-feature-icon">
+
+          <!-- Add more feature details here -->
         </div>
       </div>
+    </div>
 
-      <div v-if="page">
-        <h2>{{ page.features.title }}</h2>
-        <p>{{ page.features.description }}</p>
-        <div class="u-data-grid">
-          <div v-for="(item, index) in page.features.items" :key="index" class="u-landing-card">
+    
+<!-- Testimonials Section -->
+<div class="landing-testimonials">
+  <h2>{{ page.testimonials.title }}</h2>
+  <p>{{ page.testimonials.description }}</p>
+  <div class="u-data-columns">
+    <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="testimonial-card">
+      <h3>{{ testimonial.title }}</h3>
+      <p>{{ testimonial.quote }}</p>
+      <div class="testimonial-author">
+        <img :src="testimonial.author.avatar.src" :alt="testimonial.author.name" class="testimonial-avatar">
+        <span>{{ testimonial.author.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-          </div>
-        </div>
-      </div>
-     
-    <!-- Testimonials -->
-      <div class="text-center" v-if="page">
-        <h2>{{ page.testimonials.title }}</h2>
-          <p>{{ page.testimonials.description }}</p>
-      </div>
-      <div class="u-data-columns" v-if="page">
-        <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
-          <div class="bg-gray-100/50 dark:bg-gray-800/50" v-if="page">
-            <h3>{{ testimonial.title }}</h3>
-            <p>{{ testimonial.quote }}</p>
-            <div class="testimonial-author" v-if="page">
-              <img :src="testimonial.author.avatar" :alt="testimonial.author.name" />
-              <span>{{ testimonial.author.name }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+<div class="landing-cta bg-gray-100/50 dark:bg-gray-800/50">
+  <h2>{{ page.cta.title }}</h2>
+  <p>{{ page.cta.description }}</p>
+  <a :href="page.cta.buttonUrl" class="cta-button">{{ page.cta.buttonText }}</a>
+</div>
 
 </main>
 
@@ -113,29 +126,36 @@ function toggleDrawer() {
 </template>
 
 <style>
+
 .landing-hero {
+  text-align: center;
+  justify-content: center;
   position: relative;
 }
 
-.landing-hero ul {
-  list-style: none;
-  padding: 0;
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
 }
+
 .landing-hero h1 {
-  font-size: 80px;
-  position: absolute;
-  top: 50%;
+  z-index: 100;
+  font-size: 2rem;
+  position:absolute ;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Center text */  padding: 60px 20px;
+  text-align: center;
   color: black;
   font-weight: bold;
-  text-align: center;
   text-shadow: 2px 2px 20px white; /* Optional shadow for readability */
 }
-
-.image-container {
-  position: relative;
-  width: 100%;
+.landing-hero p {
+  font-size: 1rem;
+  color: #a8a8a8;
+  
 }
 
 .landing-hero ul li {
@@ -155,6 +175,11 @@ function toggleDrawer() {
   margin-left: 5px;
 }
 
+.landing-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
 .landing-section h2 {
   margin-bottom: 10px;
 }
@@ -163,16 +188,36 @@ function toggleDrawer() {
   margin-bottom: 20px;
 }
 
-.u-data-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
+.landing-general-features {
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.landing-feature-icon {
+  width: 20%;
+;}
 .u-landing-card {
-  background-color: rgba(240, 240, 240, 0.5);
+  background-color: #333;
   padding: 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
+}
+.u-data-grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  
+}
+.testimonial-card {
+  break-inside: avoid;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #333;
 }
 
 .testimonial-author {
@@ -189,22 +234,27 @@ function toggleDrawer() {
 
 .u-data-columns {
   display: grid;
+  column-count: 3;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;  padding: 20px;
+  gap: 20px;  
+  padding: 20px;
   margin-bottom: 20px;
 }
+
 body {
-    display: grid;
-    font-family: 'Georgia', serif;
-    margin: 0;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  background-color: rgb(6, 2, 1);
+  color: #eeeeee;
 }
 
 
 header {
-
+  
     border-radius: 8px; /* rounded corners */
     box-shadow: 0 0 8px black;
-    height: 2em;
+    height: 2rem;
     overflow: hidden;
     display: flex;
 }
@@ -223,7 +273,7 @@ header > .menu-icon {
     position: fixed;
     top: 0;
     left: -200px; /* Keeps drawer hidden */
-    background-color: #ffffff;
+    background-color: darkgrey;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
     padding-top: 20px;
