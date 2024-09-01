@@ -58,7 +58,7 @@ function toggleDrawer() {
       </ul> -->
       <template v-if="page.hero.headline">
         <div class="headline-badge relative rounded-full font-semibold">
-          <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none">
+          <a :href="page.hero.headline.to" target="_blank">
             <span class="absolute inset-0" aria-hidden="true"></span>
             {{ page.hero.headline.label }}
           </a>
@@ -114,10 +114,14 @@ function toggleDrawer() {
   </div>
 </div>
 
-<div class="landing-cta bg-gray-100/50 dark:bg-gray-800/50">
+<div class="landing-cta">
   <h2>{{ page.cta.title }}</h2>
   <p>{{ page.cta.description }}</p>
-  <a :href="page.cta.links.to" class="cta-button">{{ page.cta.links.label }}</a>
+  <a :href="page.hero.headline.to" target="_blank" class="cta-button"> {{ page.hero.headline.label }} </a>
+ 
+  
+  <span class="absolute inset-0" aria-hidden="true"></span>
+           
 </div>
 
 </main>
@@ -201,6 +205,7 @@ function toggleDrawer() {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
+
 }
 .u-data-grid {
   display: grid;
@@ -241,12 +246,21 @@ function toggleDrawer() {
   margin-bottom: 20px;
 }
 
+.landing-cta {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
 body {
   min-height: 100vh;
   font-family: 'Georgia', serif;
   margin: 0;
   background-color: rgb(6, 2, 1);
-  color: #eeeeee;
+  color: whitesmoke;
 }
 
 
@@ -271,9 +285,9 @@ header > .menu-icon {
     height: 100%;
     width: 200px;
     position: fixed;
-    top: 0;
+    top: 500;
     left: -200px; /* Keeps drawer hidden */
-    background-color: darkgrey;
+    background-color: black;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease;
     padding-top: 20px;
@@ -285,7 +299,7 @@ header > .menu-icon {
 
 .drawer a {
     text-decoration: none;
-    color: #333;
+    color: whitesmoke;
     display: block;
     padding: 15px 25px;
     transition: background-color 0.3s ease;
