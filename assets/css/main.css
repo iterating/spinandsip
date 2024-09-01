@@ -7,12 +7,10 @@ body {
 }
 h1, h2, h3, h4 {
     color:antiquewhite;
-    font-weight: 400;    
 }
 h1, h2, h3, h4, h5, p {
     margin-top: 20px;
     padding: 0;
-    max-width: 850px;
     color: antiquewhite;
 }
 h1 {
@@ -46,7 +44,6 @@ li {
 }
 
 p, ul, ol {
-    font-size: 16px;
     line-height: 24px;
 }
 pre {

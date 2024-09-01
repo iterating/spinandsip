@@ -60,7 +60,7 @@ function toggleDrawer() {
         <div class="headline-badge relative rounded-full font-semibold">
           <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none">
             <span class="absolute inset-0" aria-hidden="true"></span>
-            {{ page.hero.headline.text }}
+            {{ page.hero.headline.label }}
           </a>
           <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4">
             <!-- Optional Icon -->
