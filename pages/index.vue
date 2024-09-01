@@ -51,11 +51,11 @@ function toggleDrawer() {
     <div class="landing-hero">
       <h1>{{ page.hero.title }}</h1>
       <p>{{ page.hero.description }}</p>
-      <ul>
+  <!--     <ul>
         <li v-for="(link, index) in page.hero.links" :key="index">
           <a :href="link.url">{{ link.text }}</a>
         </li>
-      </ul>
+      </ul> -->
       <template v-if="page.hero.headline">
         <div class="headline-badge relative rounded-full font-semibold">
           <a :href="page.hero.headline.to" target="_blank" class="focus:outline-none">
