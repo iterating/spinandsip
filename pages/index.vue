@@ -117,7 +117,7 @@ function toggleDrawer() {
 <div class="landing-cta bg-gray-100/50 dark:bg-gray-800/50">
   <h2>{{ page.cta.title }}</h2>
   <p>{{ page.cta.description }}</p>
-  <a :href="page.cta.buttonUrl" class="cta-button">{{ page.cta.buttonText }}</a>
+  <a :href="page.cta.links.to" class="cta-button">{{ page.cta.links.label }}</a>
 </div>
 
 </main>
