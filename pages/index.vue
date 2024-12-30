@@ -33,7 +33,12 @@ function toggleDrawer() {
 <!-- Navigation bar and login -->
     <header>
         <span class="menu-icon" @click="toggleDrawer()">&#9776;</span>
-        
+        <button class="cta-button" v-for="(link, index) in page.hero.links" :key="index">
+         <a :href="link.to">{{ link.label }}
+           <span v-if="page.hero.links.icon" class="ml-1 w-4 h-4">
+           </span>
+         </a>
+       </button>
     </header>
 
     <div class="drawer" id="drawer">
@@ -50,26 +55,22 @@ function toggleDrawer() {
     <!-- Hero Section -->
     <div class="landing-hero">
       <h1>{{ page.hero.title }}</h1>
-      <p>{{ page.hero.description }}</p>
-  <!--     <ul>
-        <li v-for="(link, index) in page.hero.links" :key="index">
-          <a :href="link.url">{{ link.text }}</a>
-        </li>
-      </ul> -->
-      <template v-if="page.hero.headline">
-        <div class="headline-badge relative rounded-full font-semibold">
-          <a :href="page.hero.headline.to" target="_blank">
-            <span class="absolute inset-0" aria-hidden="true"></span>
-            {{ page.hero.headline.label }}
-          </a>
-          <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4">
-            <!-- Optional Icon -->
-          </span>
-        </div>
-      </template>
-      <img :src="page.hero.image" alt="Landing Image" class="hero-image">
+      <div class="landing-overlay">
+        <p>{{ page.hero.description }}</p>
+        <!-- <template v-if="page.hero.headline">
+          <div class="headline-badge relative rounded-full font-semibold">
+            <a :href="page.hero.headline.to" target="_blank">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              {{ page.hero.headline.label }}
+            </a>
+            <span v-if="page.hero.headline.icon" class="ml-1 w-4 h-4">
+            </span>
+          </div>
+        </template> -->
+      </div>
+        <img :src="page.hero.image" alt="Landing Image" class="hero-image">
     </div>
-
+      
    <!-- Features Sections -->
    <div v-for="(section, index) in page.sections" :key="index" class="landing-section">
     <h2>{{ section.title }}</h2>
@@ -117,10 +118,11 @@ function toggleDrawer() {
 <div class="landing-cta">
   <h2>{{ page.cta.title }}</h2>
   <p>{{ page.cta.description }}</p>
-  <a :href="page.hero.headline.to" target="_blank" class="cta-button"> {{ page.hero.headline.label }} </a>
- 
-  
-  <span class="absolute inset-0" aria-hidden="true"></span>
+  <button class="cta-button" v-for="(link, index) in page.cta.links" :key="index">
+    <a :href="link.to" target="_blank" class="cta-button"> 
+      {{ link.label }}
+    </a>
+  </button>
            
 </div>
 
@@ -133,37 +135,36 @@ function toggleDrawer() {
 
 .landing-hero {
   text-align: center;
-  justify-content: center;
-  position: relative;
+  position:relative;
 }
 
 .hero-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-
 }
-
 .landing-hero h1 {
   z-index: 100;
-  font-size: 2rem;
+  font-size: 5vw;
   position:absolute ;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center text */  padding: 60px 20px;
+  transform: translate(-50%, -50%); /* Center text on image*/  
   text-align: center;
   color: black;
   font-weight: bold;
   text-shadow: 2px 2px 20px white; /* Optional shadow for readability */
+
 }
 .landing-hero p {
-  font-size: 1rem;
+  font-size: 2vw;
   color: #a8a8a8;
-  
 }
-
-.landing-hero ul li {
-  margin-bottom: 10px;
+.landing-overlay {
+  position: absolute;
+  transform: translate(25%, 0%); /* Center text on image*/  
+  background-color: black;
+  opacity: 0.7;
 }
 
 .landing-hero .headline-badge {
@@ -253,6 +254,10 @@ function toggleDrawer() {
   margin-bottom: 20px;
   text-align: center;
 
+}
+
+.cta-button{
+  background-color: green;
 }
 
 body {

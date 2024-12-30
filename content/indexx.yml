@@ -8,11 +8,11 @@ hero:
   image: landing.png
   headline: 
     label: Book Now
-    to: /book
+    to: /
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
-      #to: '/signup'
+      to: /
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -64,51 +64,51 @@ testimonials:
   items:
     - quote: I hired Spin and Sip for our wedding reception, and they truly delivered. The DJ was fantastic, reading the crowd perfectly and keeping everyone on the dance floor all night. The bartender was skilled and personable, creating delicious cocktails and managing the bar seamlessly. Our guests were impressed, and the event was a huge success. Highly recommended for any event!
       author:
-        name: Jaime Everos
+        name: Jackie Choi
         description: 
         avatar:
           src: https://i.pravatar.cc/120?img=1
           loading: lazy
     - quote: We used Spin and Sip for our anniversary party, and they were amazing. The DJ played a perfect mix of music that fit the vibe of our event, and the bartender was efficient and friendly. Our guests loved the custom cocktails and the overall energy of the party. Spin and Sip made our celebration unforgettable!
       author:
-        name: Chace Rodgers
+        name: Jaime Everos
         description: 
         avatar:
           src: https://i.pravatar.cc/120?img=7
           loading: lazy
     - quote: From start to finish, Spin and Sip delivered an outstanding experience for our holiday party. The DJ was fantastic, mixing tracks that appealed to everyone, and the bartender was efficient, crafting amazing drinks that everyone enjoyed. The combination of great music and excellent service made for an unforgettable evening. I would definitely hire them again for future events!
       author:
-        name: Cornelius Sheppard
-        description: 
-        avatar:
-          src: https://i.pravatar.cc/120?img=3
-          loading: lazy
-    - quote: Spin and Sip’s team did an excellent job at our corporate event. The DJ kept the atmosphere upbeat and engaging, while the bartender provided top-notch service with a smile. The only reason for the 4-star rating is a minor delay in setting up, but once they were ready, everything went smoothly. Great experience overall!
-      author:
-        name: Destinee Woods
-        description: 
-        avatar:
-          src: https://i.pravatar.cc/120?img=5
-          loading: lazy
-    - quote: Spin and Sip has a great concept with its bar and DJ combo
-      author:
-        name: Kaleb Mccormick
+        name: Cory Sheppard
         description: 
         avatar:
           src: https://i.pravatar.cc/120?img=8
           loading: lazy
-    - quote: The mixology skills Spin and Sip were impressive, and their signature cocktails are a must-try. I loved every moment and will be recommending this to all my friends!
+    - quote: Spin and Sip’s team did an excellent job at our corporate event. The DJ kept the atmosphere upbeat and engaging, while the bartender provided top-notch service with a smile. The only reason for the 4-star rating is a minor delay in setting up, but once they were ready, everything went smoothly. Great experience overall!
       author:
-        name: Jazmin Mccall
+        name: Cindy McCoy
         description: 
         avatar:
-          src: https://i.pravatar.cc/120?img=9
+          src: https://i.pravatar.cc/120?img=5
+          loading: lazy
+    # - quote: Spin and Sip has a great concept with its bar and DJ combo
+    #   author:
+    #     name: Mindy Manus
+    #     description: 
+    #     avatar:
+    #       src: https://i.pravatar.cc/120?img=8
+    #       loading: lazy
+    - quote: The mixology skills Spin and Sip were impressive, and their signature cocktails are a must-try. I loved every moment and will be recommending this to all my friends!
+      author:
+        name: Jasmine McCoy
+        description: 
+        avatar:
+          src: https://i.pravatar.cc/120?img=10
           loading: lazy
 cta:
   title: Let’s Make Your Event Unforgettable
   description: Get in touch today to book Spin and Sip for your next event. We can’t wait to help you celebrate in style!
   links:
-    - label: Book now
-      size: xl
-      color: black
-#      to: /book
+  - label: Book now
+    size: xl
+    color: black
+    to: /
